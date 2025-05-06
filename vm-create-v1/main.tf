@@ -1,3 +1,8 @@
+provider "azurerm" {
+  features {}
+  subscription_id = "0aa6e6f6-6e44-47f7-b30d-2aa0dfd4e5f4"
+}
+
 data "azurerm_resource_group" "example" {
   name = "robo_terraform_RG"
 }
@@ -21,7 +26,7 @@ resource "azurerm_network_interface" "example" {
 }
 
 resource "azurerm_virtual_machine" "main" {
-  name                  = testVM
+  name                  = "testVM"
   location              = data.azurerm_resource_group.example.location
   resource_group_name   = data.azurerm_resource_group.example.name
   network_interface_ids = [azurerm_network_interface.example.id]
