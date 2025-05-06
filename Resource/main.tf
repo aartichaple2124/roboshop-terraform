@@ -1,17 +1,3 @@
-provider "azurerm" {
-  features {}
-  subscription_id = "0aa6e6f6-6e44-47f7-b30d-2aa0dfd4e5f4"
-}
-
-data "azurerm_resource_group" "example" {
-  name = "robo_terraform_RG"
-}
-
-data "azurerm_subnet" "example" {
-  name                 = "default"
-  virtual_network_name = "robo_vnet"
-  resource_group_name  = data.azurerm_resource_group.example.name
-}
 
 resource "azurerm_network_interface" "example" {
   name                = "test-nic"
