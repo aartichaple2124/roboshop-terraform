@@ -21,7 +21,7 @@ resource "azurerm_network_interface" "example" {
   ip_configuration {
     name                          = "internal"
     subnet_id                     = data.azurerm_subnet.example.id
-    private_ip_address_allocation = "static"
+    private_ip_address_allocation =  "Static"
   }
 }
 
