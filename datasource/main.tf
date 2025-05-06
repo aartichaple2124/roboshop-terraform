@@ -1,0 +1,12 @@
+data "azurerm_resource_group" "example" {
+  name = "robo_terraform_RG"
+}
+
+output "rg" {
+  value = data.azurerm_resource_group.example
+}
+
+provider "azurerm" {
+  features {}
+  subscription_id = "0aa6e6f6-6e44-47f7-b30d-2aa0dfd4e5f4"
+}
