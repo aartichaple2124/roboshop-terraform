@@ -6,8 +6,9 @@ resource "azurerm_network_interface" "main" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_public_ip.main.id
+    subnet_id                     = data.azurerm_subnet.example.id
     private_ip_address_allocation =  "Static"
+    public_ip_address_id          = azurerm_public_ip.main.id
   }
 }
 
@@ -41,13 +42,13 @@ resource "azurerm_virtual_machine" "main" {
     version   = "latest"
   }
   storage_os_disk {
-    name              = "myosdisk1"
+    name              = var.component
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name  = "hostname"
+    computer_name  = var.component
     admin_username = "testadmin"
     admin_password = "Password1234!"
   }
