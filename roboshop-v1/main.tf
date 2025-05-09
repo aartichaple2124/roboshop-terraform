@@ -10,7 +10,7 @@ variable "components" {
 
     frontend = {
       name = "frontend"
-      vm_size = "Standard_B2s"
+      vm_size = "Standard B2s"
     }
 
     mongodb = {
