@@ -10,12 +10,12 @@ variable "components" {
 
     frontend = {
       name = "frontend"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B2s"
     }
 
     mongodb = {
       name = "mongodb"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B2s"
     }
 
     catalogue = {
@@ -25,7 +25,7 @@ variable "components" {
 
     user = {
       name = "user"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B2s"
     }
 
     cart = {
@@ -40,12 +40,12 @@ variable "components" {
 
     shipping = {
       name = "shipping"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B2s"
     }
 
     payment = {
       name = "payment"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B2s"
     }
 
     redis = {
