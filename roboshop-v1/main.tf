@@ -9,47 +9,47 @@ variable "components" {
   default = {
 
     frontend = {
-      name = frontend
+      name = "frontend"
       vm_size = "Standard_D2as_v4"
     }
 
     mongodb = {
-      name = mongodb
+      name = "mongodb"
       vm_size = "Standard_D2as_v4"
     }
 
     catalogue = {
-      name = catalogue
+      name = "catalogue"
       vm_size = "Standard_D2as_v4"
     }
 
     user = {
-      name = user
+      name = "user"
       vm_size = "Standard_D2as_v4"
     }
 
     cart = {
-      name = cart
+      name = "cart"
       vm_size = "Standard_D2as_v4"
     }
 
     mysql = {
-      name = mysql
+      name = "mysql"
       vm_size = "Standard_D2as_v4"
     }
 
     shipping = {
-      name = shipping
+      name = "shipping"
       vm_size = "Standard_D2as_v4"
     }
 
     payment = {
-      name = payment
+      name = "payment"
       vm_size = "Standard_D2as_v4"
     }
 
     redis = {
-      name = redis
+      name = "redis"
       vm_size = "Standard_D2as_v4"
     }
   }
