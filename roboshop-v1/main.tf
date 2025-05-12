@@ -45,22 +45,22 @@ variable "components" {
 
     payment = {
       name = "payment"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B1ms"
     }
 
     redis = {
       name = "redis"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B1ms"
     }
 
     dispatch = {
       name = "dispatch"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B1ms"
     }
 
     rabbitmq = {
       name = "rabbitmq"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B1ms"
     }
   }
 
