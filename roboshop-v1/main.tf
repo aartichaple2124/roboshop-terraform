@@ -52,6 +52,16 @@ variable "components" {
       name = "redis"
       vm_size = "Standard_D2as_v4"
     }
+
+    dispatch = {
+      name = "dispatch"
+      vm_size = "Standard_D2as_v4"
+    }
+
+    rabbitmq = {
+      name = "rabbitmq"
+      vm_size = "Standard_D2as_v4"
+    }
   }
 
 }
