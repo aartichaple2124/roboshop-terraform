@@ -35,12 +35,12 @@ variable "components" {
 
     mysql = {
       name = "mysql"
-      vm_size = "Standard B2s"
+      vm_size = "Standard_B1ms"
     }
 
     shipping = {
       name = "shipping"
-      vm_size = "Standard B2s"
+      vm_size = "Standard_B1ms"
     }
 
     payment = {
