@@ -30,17 +30,17 @@ variable "components" {
 
     cart = {
       name = "cart"
-      vm_size = "Standard_D2as_v4"
+      vm_size = "Standard_B1s"
     }
 
     mysql = {
       name = "mysql"
-      vm_size = "Standard_E2s_v3"
+      vm_size = "Standard_B1s"
     }
 
     shipping = {
       name = "shipping"
-      vm_size = "Standard_E2s_v3"
+      vm_size = "Standard_B1s"
     }
 
     payment = {
